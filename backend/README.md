@@ -1,6 +1,6 @@
-# MERN Practice - Backend
+# Backend
 
-This is the backend part of the MERN (MongoDB, Express, React, Node.js) Practice project. It provides a RESTful API for user authentication, profile management, and OTP-based password reset functionality.
+This is the backend part of the MERN (MongoDB, Express, React, Node.js) project. It provides a RESTful API for user authentication, profile management, and OTP-based password reset functionality.
 
 ## Project Structure
 
