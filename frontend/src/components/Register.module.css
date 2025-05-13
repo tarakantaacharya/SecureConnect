@@ -1,0 +1,320 @@
+.formWrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.homeButton {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a7bd5;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(58, 123, 213, 0.2);
+}
+
+.homeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(58, 123, 213, 0.3);
+}
+
+.registerForm {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.registerForm::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+}
+
+.registerForm h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.passwordNotice {
+  /* margin-bottom: 5px; */
+  padding: 12px 15px;
+  background-color: rgba(255, 65, 108, 0.05);
+  border-left: 4px solid #ff416c;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.formInput, .formSelect {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.formSelect {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 15px;
+  padding-right: 40px;
+}
+
+.formInput:focus, .formSelect:focus {
+  outline: none;
+  border-color: #ff416c;
+  box-shadow: 0 0 0 3px rgba(255, 65, 108, 0.1);
+  background-color: #fff;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px rgba(255, 65, 108, 0.2);
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(255, 65, 108, 0.3);
+}
+
+.submitButton:active {
+  transform: translateY(1px);
+}
+
+.submitButton:disabled {
+  background: linear-gradient(90deg, #9e9e9e 0%, #757575 100%);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.errorMessage {
+  color: #e53935;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: left;
+  padding: 12px 15px;
+  background-color: rgba(229, 57, 53, 0.08);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.errorMessage::before {
+  content: '⚠️';
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.successMessage {
+  color: #43a047;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: left;
+  padding: 12px 15px;
+  background-color: rgba(67, 160, 71, 0.08);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.successMessage::before {
+  content: '✅';
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.linkContainer {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #666;
+  position: relative;
+  padding-top: 20px;
+}
+
+.linkContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30%;
+  right: 30%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.link {
+  color: #ff416c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.link:hover {
+  color: #ff4b2b;
+}
+
+.passwordContainer {
+  position: relative;
+  grid-column: span 2;
+  width: 100%;
+}
+
+.passwordInput {
+  width: 100%;
+}
+
+/* Ensure the password strength indicator doesn't affect layout */
+.passwordStrength {
+  position: relative;
+  z-index: 1;
+}
+
+.passwordStrength {
+  margin-top: 8px;
+}
+
+.strengthBar {
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.strengthFill {
+  height: 100%;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+.strengthText {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  text-align: right;
+  color: #666;
+}
+
+.passwordRequirements {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: left;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.requirementsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.requirementMet, .requirementNotMet {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.requirementMet {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.requirementNotMet {
+  background-color: rgba(158, 158, 158, 0.1);
+  color: #9e9e9e;
+  border: 1px solid rgba(158, 158, 158, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .registerForm {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+  
+  .registerForm h2 {
+    font-size: 24px;
+  }
+  
+  .formInput, .submitButton {
+    padding: 12px;
+  }
+  
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .passwordContainer {
+    grid-column: span 1;
+  }
+  
+  .passwordRequirements {
+    font-size: 0.75rem;
+  }
+  
+  .passwordRequirements ul {
+    padding-left: 15px;
+  }
+}
