@@ -1,6 +1,6 @@
-# MERN Practice - Frontend
+# Frontend
 
-This is the frontend part of the MERN (MongoDB, Express, React, Node.js) Practice project. It's built with React and provides a user interface for authentication, user profiles, and more.
+This is the frontend part of the MERN (MongoDB, Express, React, Node.js) project. It's built with React and provides a user interface for authentication, user profiles, and more.
 
 ## Project Structure
 
